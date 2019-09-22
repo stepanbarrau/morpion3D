@@ -1,0 +1,11 @@
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\bin\Debug\netcoreapp2.1\Morpion3D.deps.json
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\bin\Debug\netcoreapp2.1\Morpion3D.runtimeconfig.json
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\bin\Debug\netcoreapp2.1\Morpion3D.runtimeconfig.dev.json
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\bin\Debug\netcoreapp2.1\Morpion3D.dll
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\bin\Debug\netcoreapp2.1\Morpion3D.pdb
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.csprojAssemblyReference.cache
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.csproj.CoreCompileInputs.cache
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.AssemblyInfoInputs.cache
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.AssemblyInfo.cs
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.dll
+C:\Users\Stiopa\source\repos\Morpion3D\Morpion3D\obj\Debug\netcoreapp2.1\Morpion3D.pdb
