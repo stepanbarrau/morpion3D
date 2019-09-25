@@ -6,6 +6,7 @@ namespace Morpion3D
 {
     class Game
     {
+        public Rules rules = new Rules();
         public Player player1 = new Player();
         public Player player2 = new Player();
         private Queue<Player> nextPlayer = new Queue<Player>();
@@ -26,9 +27,25 @@ namespace Morpion3D
             while (!stop)
             {
                 Player current = nextPlayer.Dequeue();
-                current.play(this);
+                bool hasMadeValidMove = false;
+                Move move;
+                do
+                {
+                    move = current.createMove();
+                    hasMadeValidMove = rules.isValidMove(move, current, this);
+                    Console.WriteLine(hasMadeValidMove ? "good move" : "move invalid");
+                } while (!hasMadeValidMove);
+
+                current.playMove(move, this);
+                if(rules.winCheck(move, current, this))
+                {
+                    Console.WriteLine($"{current} has won!");
+                    stop = true;
+                }
+                
                 nextPlayer.Enqueue(current);
             }
+            Console.ReadKey();
         }
 
     }
