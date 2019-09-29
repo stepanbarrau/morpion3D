@@ -9,7 +9,7 @@ namespace Morpion3D
         public Rules rules = new Rules();
         public Player player1 = new Player();
         public Player player2 = new Player();
-        private Queue<Player> nextPlayer = new Queue<Player>();
+        public Queue<Player> nextPlayer = new Queue<Player>();
 
         public Grid grid = new Grid();
         public bool stop = false;

@@ -18,19 +18,12 @@ namespace Morpion3D
         {
             State color = player.color;
 
-
-
             var range = Enumerable.Range(0,3);
             var directions_ = from x in range from y in range from z in range select new { x, y, z };
             var directions = directions_.Select((i) => new {x = i.x - 1, y = i.y-1, z = i.z-1 });
 
-            //Console.WriteLine(directions.Count());
-            
-
             foreach(var direction in directions)
             {
-                //Console.WriteLine("{0} {1} {2}", direction.x, direction.y, direction.z);
-                
                 if((direction.x, direction.y, direction.z) != (0, 0, 0))
                 {
                     var position = new { x = move.x, y = move.y, z = move.z };
@@ -66,7 +59,6 @@ namespace Morpion3D
                     }
                     catch { };
  
-                    // Console.WriteLine($"consecutives : {consecutives}");
                     if (consecutives >= 2)
                     {
                         return (true);
