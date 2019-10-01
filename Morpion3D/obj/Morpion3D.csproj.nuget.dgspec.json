@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stiopa\\workspace\\3A centrale\\morpion3D\\Morpion3D\\Morpion3D.csproj": {}
+    "D:\\projects\\morpion3D\\Morpion3D\\Morpion3D.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stiopa\\workspace\\3A centrale\\morpion3D\\Morpion3D\\Morpion3D.csproj": {
+    "D:\\projects\\morpion3D\\Morpion3D\\Morpion3D.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stiopa\\workspace\\3A centrale\\morpion3D\\Morpion3D\\Morpion3D.csproj",
+        "projectUniqueName": "D:\\projects\\morpion3D\\Morpion3D\\Morpion3D.csproj",
         "projectName": "Morpion3D",
-        "projectPath": "C:\\Users\\Stiopa\\workspace\\3A centrale\\morpion3D\\Morpion3D\\Morpion3D.csproj",
-        "packagesPath": "C:\\Users\\Stiopa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stiopa\\workspace\\3A centrale\\morpion3D\\Morpion3D\\obj\\",
+        "projectPath": "D:\\projects\\morpion3D\\Morpion3D\\Morpion3D.csproj",
+        "packagesPath": "C:\\Users\\Quentin\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\morpion3D\\Morpion3D\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stiopa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,6 +42,7 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
