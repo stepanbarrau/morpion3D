@@ -6,6 +6,7 @@ namespace Morpion3D
     {
         static void Main(string[] args)
         {
+            
             Game game = new Game();
             Console.WriteLine(game.grid);
 

@@ -5,6 +5,12 @@ using System.Text;
 namespace Morpion3D
 {
     public enum State { empty = 0, circle = 1, cross = -1 }
+    public struct Coord
+    {
+        int x;
+        int y;
+        int z;
+    }
     class Square
     {
         public State state = State.empty;
@@ -45,7 +51,7 @@ namespace Morpion3D
         public object this[int i, int j, int k]{
             get
             {
-                return (this.grid[i,j,k]);
+                return ((Square)this.grid[i,j,k]);
             }
             set
             {
