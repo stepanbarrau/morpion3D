@@ -4,19 +4,20 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
+
 namespace MorpionServer
 {
     public class Game
     {
-        private Player pl1;
-        private Player pl2;
+        private  Player pl1 { get; set; }
+        private  Player pl2 { get; set; }
         private Grid grid;
         private GameState state;
 
-        public Game(Player pl1, player pl2)
+        public Game(Player play1, Player play2)
         {
-            this.pl1 = pl1;
-            this.pl2 = pl2;
+            this.pl1 = play1;
+            this.pl2 = play2;
         }
 
         /// <summary>

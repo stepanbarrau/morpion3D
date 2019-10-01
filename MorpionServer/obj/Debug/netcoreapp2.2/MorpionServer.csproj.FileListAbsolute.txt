@@ -1,6 +1,0 @@
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.csprojAssemblyReference.cache
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.csproj.CoreCompileInputs.cache
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.RazorAssemblyInfo.cache
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.RazorAssemblyInfo.cs
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.AssemblyInfoInputs.cache
-D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.AssemblyInfo.cs

@@ -3,40 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using System.Text;
+
 
 namespace MorpionServer
 {
-    interface Player
+    public interface Player
     {
         /// <summary>
         /// Method to ask the User for a Move
         /// </summary>
         /// <returns>Move</returns>
-        string AskMove();
+        Move AskMove();
         /// <summary>
         /// 
         /// </summary>
         /// <param name="state"></param>
-        void SendCurrentState(GameState state);
+        void SendCurrentState(Grid grid);
     }
 
     public class TcpPlayer : Player
     {
-        TcpClient client;
+        readonly TcpClient client;
+        private readonly NetworkStream stream;
 
         public TcpPlayer(TcpClient client)
         {
             this.client = client;
+            this.stream = client.GetStream();
         }
 
-        public string AskMove()
+        public Move AskMove()
         {
-            throw new NotImplementedException();
+            var msg = Encoding.UTF8.GetBytes("Play");
+            stream.Write(msg, 0, msg.Length);
+            while (client.Connected)
+            {
+                var answer = new byte[1024];
+                stream.Read(answer, 0, answer.Length);
+                try
+                {
+                    var move = Move.MoveFromString(Encoding.UTF8.GetString(answer));
+                    return move;
+                } catch { }
+            }
+            return null;
+
+            
         }
 
-        public void SendCurrentState(GameState state)
+        public void SendCurrentState(Grid grid)
         {
-            throw new NotImplementedException();
+            var msg = Encoding.UTF8.GetBytes(grid.GridToString());
+
         }
     }
 }
