@@ -12,7 +12,6 @@ namespace MorpionServer
         private  Player pl1 { get; set; }
         private  Player pl2 { get; set; }
         private Grid grid;
-        private GameState state;
 
         public Game(Player play1, Player play2)
         {
@@ -25,7 +24,7 @@ namespace MorpionServer
         /// </summary>
         private void Initialize()
         {
-            this.state = new GameState();
+            this.grid = new Grid();
         }
 
         /// <summary>
@@ -33,8 +32,8 @@ namespace MorpionServer
         /// </summary>
         private void broadcastState()
         {
-            pl1.SendCurrentState(state);
-            pl1.SendCurrentState(state);
+            pl1.SendCurrentState(grid);
+            pl1.SendCurrentState(grid);
         }
     }
 }

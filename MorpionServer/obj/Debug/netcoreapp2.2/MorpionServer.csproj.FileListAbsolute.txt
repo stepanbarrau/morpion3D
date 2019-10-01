@@ -1,0 +1,13 @@
+D:\projects\morpion3D\MorpionServer\bin\Debug\netcoreapp2.2\MorpionServer.deps.json
+D:\projects\morpion3D\MorpionServer\bin\Debug\netcoreapp2.2\MorpionServer.runtimeconfig.json
+D:\projects\morpion3D\MorpionServer\bin\Debug\netcoreapp2.2\MorpionServer.runtimeconfig.dev.json
+D:\projects\morpion3D\MorpionServer\bin\Debug\netcoreapp2.2\MorpionServer.dll
+D:\projects\morpion3D\MorpionServer\bin\Debug\netcoreapp2.2\MorpionServer.pdb
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.csproj.CoreCompileInputs.cache
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.RazorAssemblyInfo.cache
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.RazorAssemblyInfo.cs
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.AssemblyInfoInputs.cache
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.AssemblyInfo.cs
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.RazorTargetAssemblyInfo.cache
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.dll
+D:\projects\morpion3D\MorpionServer\obj\Debug\netcoreapp2.2\MorpionServer.pdb
