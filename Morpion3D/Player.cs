@@ -51,5 +51,23 @@ namespace Morpion3D
         {
             return ((Square)game.grid[this.x, this.y, this.z]);
         }
+
+        //this part is for easy serialisation
+        public string moveToString()
+        {
+            return ($"MOVE|{x}|{y}|{z}");
+        }
+
+        public static Move StringToMove(string data)
+        {
+            if (data.Substring(0,5) != "MOVE")
+            {
+                throw (new Exception("wrong format"));
+            }
+            int[] coord = new int[3];
+            coord = (int[])data.Substring(6, 11).Split('|').Select(n => Int32.Parse(n));
+
+            return (new Move(coord));
+        } 
     }
 }

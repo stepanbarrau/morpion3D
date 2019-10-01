@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Morpion3D
@@ -76,5 +77,66 @@ namespace Morpion3D
             }
             return (representation);
         }
+
+        public string gridToString()
+        {
+            string data = "GAMESTATE";
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        data = data + "|" + ((int)grid[i, j, k].state).ToString();
+                    }
+                }
+            }
+            return (data);
+        }
+
+        public static Grid stringToGrid(string data)
+        {
+            Grid grid = new Grid();
+
+            if (data.Substring(0, 9) != "GAMESTATE")
+            {
+                throw (new Exception("wrong gamestate format"));
+            }
+
+            Console.WriteLine(data);
+
+            string[] dataString = data.Substring(10).Split('|');
+            int[] states = new int[27];
+            for(int i = 0; i<27; i++)
+            {
+                Console.WriteLine(dataString[i]);
+                try
+                {
+                    states[i] =Int32.Parse(dataString[i]);
+                }
+                catch
+                {
+                    Console.Write($"could not convert {dataString[i]}");
+                }
+            }
+
+            int currentIndex = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        Square square = new Square();
+                        square.state = (State)states[currentIndex];
+                        grid[i, j, k] = square;
+                        currentIndex++;
+                    }
+                }
+            }
+            return (grid);
+        }
+
+
     }
 }
